@@ -44,9 +44,11 @@
                             Go to Dashboard
                         </a>
                     @else
-                        <a href="{{ route('register') }}" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
-                            Get Started
-                        </a>
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
+                                Get Started
+                            </a>
+                        @endif
                     @endauth
                     <a href="#features" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition">
                         Learn More
@@ -246,9 +248,11 @@
                                     Go to Dashboard
                                 </a>
                             @else
-                                <a href="{{ route('register') }}" class="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                                    Schedule a Demo
-                                </a>
+                                @if (Route::has('register'))
+                                    <a href="{{ route('register') }}" class="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                                        Schedule a Demo
+                                    </a>
+                                @endif
                             @endauth
                         </div>
                     </div>
