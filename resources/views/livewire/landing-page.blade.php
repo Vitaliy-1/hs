@@ -161,13 +161,13 @@
                             <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Довіра понад 1000 медичних закладів
+                            Довіряють понад 1000 медичних закладів
                         </li>
                         <li class="flex items-center text-gray-700">
                             <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Цілодобова підтримка
+                            Цілодобова команда підтримки
                         </li>
                     </ul>
                 </div>
@@ -220,7 +220,7 @@
                                 </svg>
                                 <div>
                                     <p class="font-medium text-gray-900">Офіс</p>
-                                    <p class="text-gray-600">вул. Медична 123, Медичний район</p>
+                                    <p class="text-gray-600">вул. Медична, 123, Київ</p>
                                 </div>
                             </div>
                         </div>
