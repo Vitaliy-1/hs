@@ -39,9 +39,15 @@
                     Designed for efficiency, built for care.
                 </p>
                 <div class="flex justify-center space-x-4">
-                    <a href="{{ route('register') }}" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
-                        Get Started
-                    </a>
+                    @auth
+                        <a href="{{ url('/dashboard') }}" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
+                            Go to Dashboard
+                        </a>
+                    @else
+                        <a href="{{ route('register') }}" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
+                            Get Started
+                        </a>
+                    @endauth
                     <a href="#features" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition">
                         Learn More
                     </a>
@@ -235,9 +241,15 @@
                             </div>
                         </div>
                         <div class="mt-6">
-                            <a href="{{ route('register') }}" class="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                                Schedule a Demo
-                            </a>
+                            @auth
+                                <a href="{{ url('/dashboard') }}" class="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                                    Go to Dashboard
+                                </a>
+                            @else
+                                <a href="{{ route('register') }}" class="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                                    Schedule a Demo
+                                </a>
+                            @endauth
                         </div>
                     </div>
                 </div>
